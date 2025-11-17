@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optic Boutique</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f4f8ff;
+            color: #1a2540;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 60px 50px;
+            background: white;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .hero-text h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #1e3c72;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .hero img {
+            width: 45%;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 32px;
+            color: #1e3c72;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            padding: 40px 50px;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product h4 {
+            margin: 12px 0 5px;
+            font-size: 20px;
+            color: #1e3c72;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Optic Boutique</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Premium Eyewear for Every Style</h2>
+            <p>A modern and responsive eyewear website showcasing premium glasses and sunglasses. Built with a clean design and smooth user experience.</p>
+        </div>
+        <img src="https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg" alt="Eyewear Hero">
+    </section>
+
+    <!-- Collection Title -->
+    <h3 id="collection" class="section-title">Our Collection</h3>
+
+    <!-- Product Grid -->
+    <section class="product-grid">
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/343720/pexels-photo-343720.jpeg" alt="Sunglasses">
+            <h4>Classic Shades</h4>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/1499477/pexels-photo-1499477.jpeg" alt="Sunglasses Display">
+            <h4>Modern Frames</h4>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/1071878/pexels-photo-1071878.jpeg" alt="Glasses Close-up">
+            <h4>Premium Glasses</h4>
+        </div>
+
+        <div class="product">
+            <img src="https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg" alt="Stylish Sunglasses">
+            <h4>Designer Sunglasses</h4>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Optic Boutique — All Rights Reserved
+    </footer>
+
+</body>
+</html>
