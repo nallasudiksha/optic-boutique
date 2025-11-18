@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunglasses - Products</title>
+<style>
+    body{
+        font-family:Poppins, sans-serif;
+        margin:0;
+        background:#fafafa;
+    }
+    header{
+        background:#111;
+        padding:20px;
+        text-align:center;
+        color:white;
+    }
+    nav a{
+        color:white;
+        margin:0 15px;
+        text-decoration:none;
+        font-weight:600;
+    }
+    .products-section{
+        padding:40px;
+        text-align:center;
+    }
+    .grid{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+        gap:25px;
+        margin-top:30px;
+    }
+    .card{
+        background:white;
+        border-radius:15px;
+        padding:20px;
+        box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+    .card img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+        border-radius:10px;
+    }
+    .btn{
+        display:inline-block;
+        background:#ff7f50;
+        padding:10px 20px;
+        color:white;
+        margin-top:10px;
+        border-radius:20px;
+        text-decoration:none;
+        font-weight:600;
+    }
+    .btn:hover{
+        background:#ff5722;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h2>OPTIC BOUTIQUE</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+    </nav>
+</header>
+
+<section class="products-section">
+    <h1>Our Sunglasses Collection</h1>
+
+    <div class="grid">
+
+        <!-- Product 1 -->
+        <div class="card">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTYGMdk_rAkKLWUaAr73XurvFDJE7QnXKRVd1MPILOZvUCsDg5eH1lYrN-Zd-isqjKTjijzYRJeRdvlodn3M_mNWtKNYFDaIZEyay1cttwkfehQRnfyUjHmV5Y">
+            <h3>Classic Aviator</h3>
+            <p>₹999</p>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSfq8IcIws068aybKHydksDHANwn5g6AmY1ZgBUm6Ow9KHM1jqn4k0YAo3YfQAfDvnav4ayfp5aiwoFOyiC72sjOJesFusCXkej85Tu-gEtYZyCX8T-_Mvkx2k">
+            <h3>Retro Round</h3>
+            <p>₹1299</p>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ7lPOljsn-KQjj-sO_Edhb-9M-ZFSzndFW3QZebtEir6j0MTCVr2_kxCV3VxPIuB4Mi7vNbigRZYIP9CO7XWUREV417f57vDYoXYb39gs">
+            <h3>Sporty Shades</h3>
+            <p>₹1499</p>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="card">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR4uNUD03D0UigDoA0XzK80LbPATMkYdnBzy_Wm44XTT11EUpbCmC1l9uus9iIEI9kQXw63Vh2GpVrlg8iFV9ohn4w3GrJKdBLzh-PVYCZhpHSOLlpUl_mGEg">
+            <h3>Cat-Eye Elegant</h3>
+            <p>₹1099</p>
+            <a href="payment.html" class="btn">Buy Now</a>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
