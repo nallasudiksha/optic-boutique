@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment - Optic Boutique</title>
+<style>
+    body{
+        font-family:Poppins, sans-serif;
+        margin:0;
+        background:#f0f0f0;
+    }
+    header{
+        background:#111;
+        padding:20px;
+        text-align:center;
+        color:white;
+    }
+    nav a{
+        color:white;
+        margin:0 15px;
+        text-decoration:none;
+        font-weight:600;
+    }
+    .payment-box{
+        width:90%;
+        max-width:450px;
+        margin:50px auto;
+        background:white;
+        padding:25px;
+        box-shadow:0 5px 20px rgba(0,0,0,0.1);
+        border-radius:15px;
+    }
+    input{
+        width:100%;
+        padding:12px;
+        margin:10px 0;
+        border-radius:8px;
+        border:1px solid #ccc;
+    }
+    .btn{
+        width:100%;
+        background:#ff7f50;
+        padding:12px;
+        color:white;
+        border:none;
+        border-radius:25px;
+        font-size:16px;
+        font-weight:600;
+        cursor:pointer;
+    }
+    .btn:hover{
+        background:#ff5722;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h2>OPTIC BOUTIQUE</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+    </nav>
+</header>
+
+<div class="payment-box">
+    <h2>Payment Details</h2>
+    <form action="thankyou.html">
+        <input type="text" placeholder="Full Name" required>
+        <input type="text" placeholder="Address" required>
+        <input type="number" placeholder="Phone Number" required>
+        <input type="text" placeholder="Card Number" required>
+        <input type="text" placeholder="CVV" required>
+        <button class="btn">Pay Now</button>
+    </form>
+</div>
+
+</body>
+</html>
