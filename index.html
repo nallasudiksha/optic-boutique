@@ -1,228 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-W9JV5Q8K');</script>
-<!-- End Google Tag Manager -->
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-66EKXE4PKK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-    
-    gtag('config', 'G-66EKXE4PKK', { 'debug_mode':true });
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optic Boutique</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: "Poppins", sans-serif;
-            background: #f4f8ff;
-            color: #1a2540;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            padding: 20px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 90;
-        }
-        header h1 { margin: 0; font-size: 28px; }
-        nav a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        /* Hero */
-        .hero {
-            display: flex;
-            align-items: center;
-            padding: 60px 50px;
-            background: white;
-        }
-        .hero-text { flex: 1; padding-right: 40px; }
-        .hero-text h2 {
-            font-size: 42px;
-            margin-bottom: 15px;
-            color: #1e3c72;
-        }
-        .hero-text p { font-size: 18px; line-height: 1.6; }
-        .hero img {
-            width: 45%;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-        }
-
-        /* Section Title */
-        .section-title {
-            text-align: center;
-            margin-top: 60px;
-            font-size: 32px;
-            color: #1e3c72;
-        }
-
-        /* Product Grid */
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 30px;
-            padding: 40px 50px;
-        }
-        .product-card {
-            background: white;
-            border-radius: 14px;
-            padding: 18px;
-            box-shadow: 0 4px 18px rgba(0, 0, 40, 0.12);
-            transition: 0.3s ease;
-            text-align: center;
-            border: 1px solid #dfebff;
-        }
-        .product-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 6px 24px rgba(0, 0, 40, 0.18);
-        }
-        .product-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-        .product-title {
-            margin: 12px 0 6px;
-            font-size: 20px;
-            font-weight: 600;
-            color: #1e3c72;
-        }
-        .product-price {
-            font-size: 18px;
-            color: #2a5298;
-            margin-bottom: 15px;
-            font-weight: 500;
-        }
-        .product-btn {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-size: 15px;
-            font-weight: 500;
-            text-decoration: none;
-            display: inline-block;
-            transition: 0.3s ease;
-        }
-        .product-btn:hover {
-            background: #16315f;
-        }
-
-        /* Footer */
-        footer {
-            background: #1e3c72;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        /* Responsive */
-        @media (max-width: 850px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-            .hero-text { padding-right: 0; }
-            .hero img { width: 90%; margin-top: 25px; }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optic Boutique - Home</title>
+<style>
+    body{
+        font-family: Poppins, sans-serif;
+        margin:0;
+        background:#f5f5f5;
+    }
+    header{
+        background:#111;
+        padding:20px;
+        text-align:center;
+        color:white;
+    }
+    nav a{
+        color:white;
+        margin:0 15px;
+        text-decoration:none;
+        font-weight:600;
+    }
+    .hero{
+        background:url("https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg") center/cover no-repeat;
+        height:80vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        color:white;
+        position:relative;
+    }
+    .hero::after{
+        content:"";
+        position:absolute;
+        inset:0;
+        background:rgba(0,0,0,0.45);
+    }
+    .hero-content{
+        position:relative;
+        z-index:2;
+    }
+    .hero h1{
+        font-size:3rem;
+    }
+    .btn{
+        padding:12px 28px;
+        margin-top:15px;
+        background:#ff7f50;
+        border-radius:30px;
+        color:white;
+        font-weight:600;
+        text-decoration:none;
+    }
+    .btn:hover{
+        background:#ff5722;
+    }
+</style>
 </head>
-
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9JV5Q8K"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
-    <!-- Header -->
-    <header>
-        <h1>Optic Boutique</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#collection">Collection</a>
-            <a href="#about">About</a>
-        </nav>
-    </header>
+<header>
+    <h2>OPTIC BOUTIQUE</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+    </nav>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Premium Eyewear for Every Style</h2>
-            <p>A modern and responsive eyewear website showcasing premium glasses and sunglasses. Built with a clean design and smooth user experience.</p>
-        </div>
-        <img src="https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg" alt="Eyewear Hero">
-    </section>
-
-    <!-- Collection Title -->
-    <h3 id="collection" class="section-title">Our Collection</h3>
-
-    <!-- Product Cards -->
-    <section class="product-grid">
-
-        <div class="product-card">
-            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTBeu3Al8ESW1itydiXfP1W2Iu-lTKtTrgQGs59BaIXQGyiRTjOand27W1BR0iAxn49O1hmNZJ0kC6oqOWHQKxx_7zkLLBHYVcbgcuuP9KVpSo0k6F5dICeOMk" alt="Luxury Sunglasses">
-            <h4 class="product-title">Luxury Polarized Shades</h4>
-            <p class="product-price">$129.99</p>
-            <a class="product-btn" href="#">Add to Cart</a>
-        </div>
-
-        <div class="product-card">
-            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSWZFVT2YiOMrCbm8pey-IWQKbxgiW6zPrX9MbDCm0ikZy8sg_VDbt2T8f4EN3RaTLcX9geVuagXKIC_V96JZ6KgxtJR_vLvmKLdvA4bvxGVzFjTSE0HX8Vjg" alt="Round Vintage Glasses">
-            <h4 class="product-title">Vintage Round Frames</h4>
-            <p class="product-price">$89.99</p>
-            <a class="product-btn" href="#">Add to Cart</a>
-        </div>
-
-        <div class="product-card">
-            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQGRLiT5c0K4NgYSudoKI29zIbrRNCaokCG3IoQHiHAnpQTkkB81J5l7y9EDeGveEdkSbETzQHasr6tGJ6D2t-FlxoxxcU8b_2dhpycDBfpdEYGTUPC8SnAHbE0LbiZjw47WMTZhpI" alt="Premium Clear Glasses">
-            <h4 class="product-title">Crystal Clear Optics</h4>
-            <p class="product-price">$74.50</p>
-            <a class="product-btn" href="#">Add to Cart</a>
-        </div>
-
-        <div class="product-card">
-            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQqoj2lvv72CnOlq7yaPPUVDbmHJU4nnJuR9yr0rg7WPubVZE85y0fTOD-PZQEyiQqEv3uzfQbRDap7IA8kcWEuJg5V1AbxGojOt9MCLl6pdrEduqg2BgQDgdK2iJGFNTeVOt4ZzJ0" alt="Modern Street Sunglasses">
-            <h4 class="product-title">Urban Street Shades</h4>
-            <p class="product-price">$99.00</p>
-            <a class="product-btn" href="#">Add to Cart</a>
-        </div>
-
-        <div class="product-card">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAA..." alt="Exclusive Glasses Set">
-            <h4 class="product-title">Exclusive Designer Set</h4>
-            <p class="product-price">$159.99</p>
-            <a class="product-btn" href="#">Add to Cart</a>
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        © 2025 Optic Boutique — All Rights Reserved
-    </footer>
+<section class="hero">
+    <div class="hero-content">
+        <h1>Discover Your Perfect Pair</h1>
+        <p>Premium sunglasses crafted for elegance, comfort & clarity.</p>
+        <a href="products.html" class="btn">Shop Now</a>
+    </div>
+</section>
 
 </body>
 </html>
