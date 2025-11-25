@@ -68,5 +68,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="index.html" class="btn">Back to Home</a>
 </div>
 
+  <script>
+// Generate a random transaction ID for testing
+var transactionId = 'TEST-' + Math.floor(Math.random() * 1000000);
+
+// Generate a random purchase value for testing
+var purchaseValue = Math.floor(Math.random() * 5000) + 500; // 500 - 5500 INR
+
+// Push to dataLayer for GTM
+dataLayer.push({
+  event: 'purchase',
+  transaction_id: transactionId,
+  value: purchaseValue,
+  currency: 'INR'
+});
+
+// Optional: show on the page for reference
+var box = document.querySelector('.box');
+var info = document.createElement('p');
+info.innerText = 'Transaction ID: ' + transactionId + ' | Amount: ₹' + purchaseValue;
+box.appendChild(info);
+</script>
+
 </body>
 </html>
